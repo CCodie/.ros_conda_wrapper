@@ -17,7 +17,8 @@ This wrapper solves some known problems/conflicts you might experience while try
 1.  Clone the repository to your user home directory and cd into the `.ros_conda_wrapper` folder.
 
     ```bash
-    git clone https://github.com/rickstaa/.ros_conda_wrapper.git
+    # git clone https://github.com/rickstaa/.ros_conda_wrapper.git
+    git clone https://github.com/CCodie/.ros_conda_wrapper.git
     cd .ros_conda_wrapper
     ```
 
@@ -57,7 +58,8 @@ command has been added. This command takes the following options:
 The following commands can be used to make a Conda environment ROS compatible:
 
 ```bash
-conda create -n example_env python==3.6
+# conda create -n example_env python==3.6
+conda create -n example_env python=3.6
 conda --ros-wrapper activate
 conda --ros-wrapper init example_env
 conda activate example_env
